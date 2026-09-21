@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS\style_PF.css">
+    <link rel="icon" href="Flores\1280w-J3Z7_nL8eOI.webp" type="image/x-icon">
+    
+    <title>Para ti ✨</title>
+</head>
+
+<body>
+
+    <div class="stars"></div>
+
+    <div class="particles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <main class="container">
+
+        <div class="top-message">
+            <span>✦</span>
+            <p></p>
+            <span>✦</span>
+        </div>
+
+        <div class="greetings">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="description">
+            <span>Hay algo que quiero mostrarte...</span>
+        </div>
+
+        <div class="message">
+            <p>
+                No es algo enorme,<br>
+                pero está hecho con mucho cariño.
+            </p>
+        </div>
+
+        <div class="button">
+            <button class="botones">
+                <a href="PAINT.html">
+                    <span>DESCUBRIR</span>
+                    <span class="arrow">→</span>
+                </a>
+            </button>
+        </div>
+
+        <div class="bottom-message">
+            <span>♡</span>
+            <p>hecho especialmente para ti</p>
+            <span>♡</span>
+        </div>
+
+    </main>
+
+    <div class="glow"></div>
+
+
+    <!-- MÚSICA -->
+    <audio
+        id="music"
+        src="sound/PAULFLORES_DUALIPA.mp3"
+        autoplay
+        loop
+        preload="auto">
+    </audio>
+
+
+    <!-- PARTÍCULAS -->
+    <script>
+        document.querySelectorAll('.particles span').forEach(particle => {
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 6 + 's';
+            particle.style.animationDuration =
+                5 + Math.random() * 7 + 's';
+        });
+    </script>
+
+
+    <!-- ANIM.JS -->
+    <script src="anim.js"></script>
+
+</body>
+</html>
